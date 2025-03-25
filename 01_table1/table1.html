@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        table{
+            /* 테두리선 삽입 할 때 */
+            border: 1px solid #000;
+            width: 600px;
+            /* 표통째로 가운데 정열 */
+            margin: auto;
+            /* 테두리선사이여백설정 */
+            border-spacing: 0px;
+            /* 테두리선 중복 제거 */
+            border-collapse: collapse;
+            background: #ffcc00;
+            }
+        td{
+            border: 1px solid #000;
+            /* 글자를 정열 */
+            text-align: center;
+            /* 안쪽여백 주기 */
+            padding: 20px;
+            width: 200px;
+        }
+        caption{
+            text-align: left;
+            color: #ee0000;
+        }
+        .col{
+            width: 100px;
+        }
+        .col2,.col3{
+            width: 250px;
+        }
+        .row1{
+            background: #ffcc01;
+        }
+        .row2{
+            background: #cdff00;
+        }
+        .col3{
+            background: #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <h1>[ 문서 테이블 꾸리미 ]</h1>
+    <!-- 표만들기 -->
+    <table>
+        <caption>*주간시간표 테이블</caption>
+        <!-- 표면에 하나의 행 -->
+        <tr class="row1">
+            <!-- 하나의 행안에서 행 -->
+            <td class="col1">1교시</td>
+            <td class="col2">2교시</td>
+            <td class="col3">3교시</td>
+        </tr>
+        <tr class="row2">
+            <td>포토샵</td>
+            <td>HTML</td>
+            <td class="col3">JQUERY</td>
+        </tr>
+        <tr class="row2">
+            <td>일러스트</td>
+            <td>CSS</td>
+            <td class="col3">포트폴리오</td>
+        </tr>
+    </table>
+</body>
+</html>
