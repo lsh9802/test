@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기2</title>
+    <style>
+        table{
+            width: 1100px;
+            border-top: 3px solid #002b5e;
+            border-bottom: 1px solid #bdbdbd ;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th{
+            border: 1px solid #bdbdbd;
+            height: 52px;
+            width: 177px;
+            background: #f1f1f1;
+        }
+
+        td{
+            border: 1px solid #bdbdbd;
+            text-align: center;
+            height: 51px;
+        }
+        .col1{
+            border-left: none;
+        }
+        .col5{
+            border-right: none;
+        }
+        caption{
+            text-align: right;
+        }
+        .col0{
+            background: #f9f9f9;
+        }
+        .col11{
+            width: 213px;
+        }
+        .col12{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>단위 : 억 원</caption>
+        <tr>
+            <th class="col1 col0 col11">연도</th>
+            <th>합계</th>
+            <th>주택</th>
+            <th>토목</th>
+            <th>플랜트</th>
+            <th class="col5">연결토목</th>
+        </tr>
+        <tr>
+            <th class="col1 col0 col11" rowspan="2">2024</th>
+            <td>83,184</td>
+            <td>49,481</td>
+            <td>13,710</td>
+            <td>20,868</td>
+            <td class="col5">-875</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>59.5%</td>
+            <td>16.5%</td>
+            <td>25.1%</td>
+            <td class="col5">-1.1%</td>
+        </tr>
+        <tr>
+            <th class="col1 col0 col11" rowspan="2">2023</th>
+            <td>79,911</td>
+            <td>52,569</td>
+            <td>13,650</td>
+            <td>16,194</td>
+            <td class="col5">-2,502</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>65.8%</td>
+            <td>17.1%</td>
+            <td>20.3%</td>
+            <td class="col5">-3.1%</td>
+        </tr>
+        <tr>
+            <th class="col1 col0 col11" rowspan="2">2022</th>
+            <td>74,968</td>
+            <td>52,948</td>
+            <td>13,372</td>
+            <td>8,831</td>
+            <td class="col5">-183</td>
+        </tr>
+        <tr>
+            <td>100%</td>
+            <td>70.6%</td>
+            <td>17.8%</td>
+            <td>11.8%</td>
+            <td class="col5">-0.2%</td>
+        </tr>
+    </table>
+</body>
+</html>
