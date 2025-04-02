@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그요소응용</title>
+    <style> 
+        body{
+            border: 5px solid #ffbfcb;
+            background: #ffffff;
+        }
+        fieldset{
+            border: 1px solid #d7a75b;
+            margin-bottom: 20px;
+            margin-left: 19px;
+            margin-right: 19px;
+            color: #b88364;
+        }
+        li{
+            list-style: none;
+            background: #eeeeee;
+            padding: 10px;
+            margin-top: 10px;
+            color: #000000;
+        }
+        h1{
+            margin-left: 19px;
+        }
+    </style>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="">이름</label>
+                    <input type="text" name="" id="" placeholder="여백없이 입력">
+                </li>
+                <li>
+                    <label for="">비밀번호</label>
+                    <input type="password" name="" id="" placeholder="비밀번호를 입력하시오">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="email">주소</label>
+                    <input type="text" name="" id="email">
+                </li>
+                <li>
+                    <label for="nu">전화번호</label>
+                    <select name="" id="">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">012</option>
+                    </select>
+                    <input type="text" name="" id="nu" maxlength="4" autofocus required>
+                    <input type="text" name="" id="nu" maxlength="4" autofocus required>
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea name="" id="memo" cols="40" rows="2" placeholder="여기에 메모를 입력하세요 "></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li>
+                    <label for="">과테말라 안티구아 (100g)</label>
+                    <input type="text" name="" id="" min="1" max="10">개
+                </li>
+                <li>
+                    <label for="">인도네시아 만델링 (100g)</label>
+                    <input type="text" name="" id="" min="1" max="10">개
+                </li>
+                <li>
+                    <label for="">탐라는 도다 (블렌딩) (100g)</label>
+                    <input type="text" name="" id="" min="1" max="10">개
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    <label for="">01</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">02</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">03</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="">04</label>
+                </li>
+                <li>
+                    <label for="">r01</label><input type="radio" name="cut" id="">
+                    <label for="">r02</label><input type="radio" name="cut" id="">
+                    <label for="">r03</label><input type="radio" name="cut" id="">
+                    <label for="">r04</label><input type="radio" name="cut" id="">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼모음</legend>
+            <ul>
+                <li>
+                    <input type="submit" value="주문하기"> <input type="reset" value="취소하기">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
